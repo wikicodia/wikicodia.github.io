@@ -9,7 +9,7 @@ def index():
     with open("index.html", "r") as file:
         return file.read()
     
-@app.route("/langs/")
+@app.route("/langs")
 def langs():
     with open("langs/index.html", "r") as file:
         return file.read()

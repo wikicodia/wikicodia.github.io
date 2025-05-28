@@ -28,5 +28,10 @@ def js():
 def c():
     with open("langs/c/index.html") as file:
         return file.read()
+    
+@app.route("/langs/css")
+def css():
+    with open("langs/css/index.html") as file:
+        return file.read()
 
 app.run(port=8080)

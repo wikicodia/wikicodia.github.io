@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, send_from_directory
 from os import getcwd
 
 app = Flask(__name__)
@@ -33,5 +33,10 @@ def c():
 def css():
     with open("langs/css/index.html") as file:
         return file.read()
+    
+@app.route("/favicon.ico")
+def favicon():
+    with open("favicon.ico", "rb") as file:
+        return send_from_directory(app.root_path, "favicon.ico")
 
 app.run(port=8080)

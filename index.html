@@ -31,21 +31,32 @@
         margin-left: 10%;
         margin-right: 10%;
     }
+   #footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #536a94; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+   }
 </style>
 <body>
-
+<div>
     <div align="center">
         <h1>wikicodia <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16"><path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8z"/></svg></h1>
         <h2>One in a world <a href="/langs" class="badge bg-primary btn">Quick start with any {langulage}</a></h2>
         <hr>
     </div>
     <div class="list-group">
-        <a href="/langs/python" type="button" class="list-group-item list-group-item-action active" aria-current="true">Python</a>
-        <a href="/langs" type="button" class="list-group-item list-group-item-action active btn-success" aria-current="true">More Langulages</a>
+        <a href="/langs" type="button" class="list-group-item list-group-item-action active" aria-current="true">Choose langulage</a>
     </div>
-    <hr>
+</div>
+</div>
+
+<div id="footer">
     <div align="center">
-        <h6 style="color: rgb(153, 153, 153);"><small>copyright © i4ego. MIT License</small> </h6>
+        <small>copyright &copy; i4ego. MIT License</small>
     </div>
+</div>
 </body>
 </html>

@@ -24,4 +24,9 @@ def js():
     with open("langs/js/index.html", "r") as file:
         return file.read()
 
+@app.route("/langs/c")
+def c():
+    with open("langs/c/index.html") as file:
+        return file.read()
+
 app.run(port=8080)
